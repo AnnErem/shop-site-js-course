@@ -1,0 +1,71 @@
+*{
+    transition: border-color 0.4s;
+    transition: background-color 0.4s;
+    transition: color 0.4s;
+}
+p, h1, h2, h3, h4, h5, h6, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.header {
+    grid-column: 1/-1;
+    padding: 10px;
+    border: 2px solid #DEDEDE;
+    display: flex;
+}
+
+.cart-button {
+    margin-left: auto;
+}
+
+.page-content {
+    grid-column: 1/-1;
+    padding: 10px 20px;
+}
+
+.goods-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.goods-item {
+    border: 2px solid #dedede;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #b1b1b1;
+    line-height: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+    &__img {
+        width: auto;
+        height: 200px;
+        border: 2px solid #dedede;
+        grid-column: 1/-1;
+    }
+    &__button {
+        grid-column: -1/-2;
+    }
+}
+
+.button {
+    border: 1px solid #dedede;
+    border-radius: 50px;
+    padding: 5px 10px;
+    background: white;
+    color: #b1b1b1;
+    font-weight: 600;
+    &:hover {
+        background-color: #b1b1b1;
+        color: #fff;
+        border-color: #fff;
+    }
+}
